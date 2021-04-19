@@ -9,10 +9,18 @@
     <script>
         let val1 = prompt("add a value", '');
         let val2 = prompt("add a second value", '');
-        let num1 = Number(val1)
-        let num2 = Number(val2)
-        sum = num1 + num2;
-        alert(sum);
+        let num1 = Number(val1);
+        let num2 = Number(val2);
+
+        if (Number.isNaN(num2)){
+            alert(0);
+        }
+        else{
+            sum = num1 + num2;
+            alert(sum);
+            
+        }
+       
     </script>
 </head>
 
